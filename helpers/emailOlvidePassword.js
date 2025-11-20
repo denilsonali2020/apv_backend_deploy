@@ -16,7 +16,7 @@ const emailOlvidePassword = async (datos) => {
 
     //dentro de sendMail va el cuerpo del email
     const info = await transporter.sendMail({
-        from: 'APV - Administrador de Pacientes de Veterinaria',
+        from: '"APV - Administrador de Pacientes de Veterinaria" <no-reply@test-vz9dlem51k14kj50.mlsender.net>',
         to: email,
         subject: 'Reestablece tu password',
         text: 'Reestablece tu password',
